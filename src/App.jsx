@@ -10,7 +10,8 @@ export default function App() {
   const [quote, setQuote] = useState(null);
 
   useEffect(() => {
-    fetch("https://type.fit/api/quotes")
+    // fetch("https://type.fit/api/quotes")
+ fetch("https://api.quotable.io")  
       .then((res) => res.json())
       .then((json) => {
         setQuotes(json);
